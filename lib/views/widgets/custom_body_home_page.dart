@@ -9,12 +9,16 @@ class CustomBodyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(left: 16.0,right: 16.0,top: 12.0),
+    return Padding(
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 12.0),
       child: Column(
         children: [
-          CustomAppBar(),
-          CustomListViewOfItemNote()
+          CustomAppBar(
+            title: 'Notes',
+            icon: Icons.search,
+            onTap: () {},
+          ),
+          const CustomListViewOfItemNote()
         ],
       ),
     );
